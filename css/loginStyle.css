@@ -3,48 +3,6 @@
   font-family: "Gowun Dodum", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: gray;
-  display: block;
-}
-a:hover {
-  color: rgba(128, 128, 128, 0.726);
-}
-
-.mypage {
-  margin: 0.5em 0.5em;
-}
-
-.navi {
-  border-bottom: 1px solid gray;
-}
-
-.search {
-  width: 25em;
-  border: 0;
-  border-bottom: 2px solid gray;
-  margin-right: 0.8em;
-}
-
-.article-list {
-  margin-top: 1.5em;
-}
-
-.footer-clean {
-  box-sizing: border-box;
-  margin-top: 3em;
-  padding-top: 1em;
-  background-color: antiquewhite;
-  font-size: small;
-  bottom: 0;
-  width: 100%;
-}
-
-.login {
-  justify-content: right;
-}
-
 h1 {
   text-align: center;
   padding-bottom: 0.7em;
@@ -55,7 +13,7 @@ input {
   border-bottom: 1px solid gray;
 }
 
-.loginForm {
+.container {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, minmax(50px, auto));
@@ -65,16 +23,6 @@ input {
     ". idpw ."
     ". buttons .";
   gap: 0.3rem;
-  margin: 5em auto;
-}
-
-.name,
-.description {
-  text-align: center;
-}
-
-.buybtn {
-  justify-content: end;
 }
 
 .title {
