@@ -1,12 +1,24 @@
-const id = document.querySelector('#id');
+const id = document.querySelector('input[name="id"]');
+const pw = document.querySelector('input[name="pw"]');
 
-document.querySelector('form').addEventListener('submit', function (evt) {
+document.querySelector('.loginForm').addEventListener('submit', function (evt) {
   evt.preventDefault();
-  // console.log(id.value);
+  // console.log(id.value)
+  // console.log(pw.value)
 
-  if (!id.value) {
-    alert('아이디를 입력해주세요');
-    id.value = '';
-    id.focus();
-  }
+
 })
+
+var forms = document.querySelectorAll('.needs-validation')
+
+Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
