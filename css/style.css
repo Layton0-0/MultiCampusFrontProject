@@ -199,13 +199,7 @@ input {
   background-color: rgb(245, 237, 226);
 }
 
-/* #wrapper{
-  height: auto;
-  min-height: 100%;
-  padding-bottom: (footer높이);
+/* 밑에 footer 붙이는 용도 */
+#wrapper {
+  min-height: 45em;
 }
-footer{
-  height: (footer높이);
-  position : relative;
-  transform : translateY(-100%);
-} */
